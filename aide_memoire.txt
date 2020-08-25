@@ -1,0 +1,10 @@
+#Projet commands to remember
+#
+#create a yaml requirements file for the current environment (ds_gp)
+conda env export -n ds_gp -f environment.yaml
+
+#install/create environments requirements based on the yaml file
+conda env create -f environment.yaml --force
+
+#update environment & file
+conda env update --file environment.yaml
